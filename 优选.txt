@@ -26,4 +26,3 @@ icook.hk#官方优选
 icook.tw#官方优选
 www.shopify.com#Shopify官方
 mfa.gov.ua:443#乌克兰外交部
-将所有优选域名用逗号连接成一行排列。
