@@ -5,6 +5,7 @@ mfa.gov.ua#电信联通
 www.shopify.com#电信
 store.ubi.com#电信联通
 staticdelivery.nexusmods.com#电信联通
+180.2.108.38:8080#JP 
 一、极速稳定1
 172.64.53.77#电信
 172.64.52.223#电信
