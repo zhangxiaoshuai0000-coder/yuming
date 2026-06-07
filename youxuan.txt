@@ -1,10 +1,10 @@
 （优选域名）
-youxuan.cf.090227.xyz#电信
-www.visa.cn#联通
-mfa.gov.ua#电信联通
-www.shopify.com#电信
-store.ubi.com#电信联通
-staticdelivery.nexusmods.com#电信联通
+yidong.19931101.xyz#移动专线
+liantong.19931101.xyz#联通专线
+dianxin.19931101.xyz#电信专线
+cdn.31514926.xyz#三网专线
+freeyx.cloudflare88.eu.org#三网专线
+cloudflare-ip.mofashi.ltd#三网专线
 一、极速稳定1
 108.162.198.17#电信
 172.64.53.214#电信
