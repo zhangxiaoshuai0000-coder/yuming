@@ -3,10 +3,9 @@ yidong.19931101.xyz#移动专线
 liantong.19931101.xyz#联通专线
 dianxin.19931101.xyz#电信专线
 cloudflare-ip.mofashi.ltd#三网专线
-群友分享
-mv7wh.tech#香港01
-74qxv.top#香港02
-wpg27.xyz#香港03
+*.cloudflare.182682.xyz#三网专线
+*.cloudfront.182682.xyz#三网专线
+*.edgeone.182682.xyz#三网专线
 一、极速稳定1
 108.162.198.17#电信
 172.64.53.214#电信
