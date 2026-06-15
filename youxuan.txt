@@ -4,6 +4,8 @@ liantong.19931101.xyz#联通专线
 dianxin.19931101.xyz#电信专线
 cloudflare-ip.mofashi.ltd#三网专线
 cloudflare.182682.xyz#三网专线
+freeyx.cloudflare88.eu.org#三网专线
+cloudflare-ip.mofashi.ltd#三网专线
 一、极速稳定1
 172.64.52.139#电信
 162.159.45.41#电信
