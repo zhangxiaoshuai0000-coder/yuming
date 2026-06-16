@@ -154,10 +154,6 @@ yg1.ygkkk.dpdns.org:443#大佬维护 | YGKKK
 cf.090227.xyz:443#大佬维护 | CMLiu
 cf.tencentapp.cn:443#大佬维护 | KTFF
 cloudflare.182682.xyz:443#大佬维护 | WeTest
-ct.877774.xyz:443#按运营商 | 电信QMS
-ct.cloudflare.byoip.top:443#按运营商 | 电信Byoip
 cu.877774.xyz:443#按运营商 | 联通QMS
-cu.cloudflare.byoip.top:443#按运营商 | 联通Byoip
 cmcc.877774.xyz:443#按运营商 | 移动QMS
-cm.cloudflare.byoip.top:443#按运营商 | 移动Byoip
 162.159.198.1:443#优选域名
