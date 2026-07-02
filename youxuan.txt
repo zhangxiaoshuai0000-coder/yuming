@@ -18,13 +18,7 @@ mfa.gov.ua#联通电信专线
 104.17.164.48#移动
 104.17.214.233#移动
 104.17.158.153#移动
-104.17.167.248#移动
-104.19.155.101#移动
-104.17.22.93#移动
 二、极速稳定2
-162.159.15.197#电信
-162.159.49.231#电信
-162.159.25.50#电信
 162.159.19.19#电信
 162.159.49.232#电信
 104.17.233.7#联通
@@ -48,10 +42,6 @@ mfa.gov.ua#联通电信专线
 172.64.52.24#三网通用
 172.64.53.116#三网通用
 162.159.45.161#三网通用
-108.162.198.84#三网通用
-162.159.38.50#三网通用
-162.159.44.140#三网通用
-162.159.39.93#三网通用
 四、极速稳定5
 172.64.52.158#三网多线
 162.159.39.78#三网多线
@@ -82,70 +72,7 @@ mfa.gov.ua#联通电信专线
 172.64.53.29#44.64MB/s
 162.159.42.221#37.68MB/s
 六、EDT 导航资源
-162.159.197.1:443#EDT优选三网专线
-162.159.198.1:443#官方入口 | MASQUE
-162.159.197.1:443#官方入口 | ZeroTrust
-engage.cloudflareclient.com:443#官方入口 | WireGuard
-store.ubi.com:443#企业域名 | 育碧商城
-serviceshub.samsclub.com:443#企业域名 | 山姆会员
-www.allianz.com:443#企业域名 | 安联集团
-www.decathlon.com:443#企业域名 | 迪卡侬
-www.shopify.com:443#企业域名 | Shopify
-openai.com:443#企业域名 | OpenAI
-www.nexusmods.com:443#企业域名 | NexusMods
-www.bluehost.com:443#企业域名 | BlueHost
-www.glassdoor.com:443#企业域名 | Glassdoor
-www.jimdo.com:443#企业域名 | Jimdo
-www.sage.com:443#更多选择 | Sage
-www.speedtest.net:443#更多选择 | Ookla
-investor.apple.com:443#更多选择 | Apple
-www.markmonitor.com:443#更多选择 | MarkMonitor
-www.epicgames.com:443#更多选择 | Epicgames
-mycareer.verizon.com:443#更多选择 | Verizon
-www.wto.org:443#更多选择 | WTO世贸
-www.affirm.com:443#更多选择 | Affirm
-www.fossilchina.cn:443#更多选择 | Fossil
-www.zendesk.com:443#更多选择 | Zendesk
-www.doordash.com:443#更多选择 | DoorDash
-www.cookiebot.com:443#更多选择 | Cookiebot
-www.digitalocean.com:443#更多选择 | DigitalOcean
-www.mskcc.org:443#更多选择 | MSKCC
-cdn.jsdelivr.net:443#更多选择 | jsDelivr
-www.broadcom.com:443#更多选择 | 博通
-www.nestle.com:443#更多选择 | 雀巢
-www.asda.com:443#更多选择 | 阿斯达
-homecare.stryker.com:443#更多选择 | 史赛克
-www.emerson.com:443#更多选择 | 艾默生
-visit.honeywell.com:443#更多选择 | 霍尼韦尔
-polestar.com:443#更多选择 | 极星汽车
-auctions.ihg.com.cn:443#更多选择 | 洲际酒店
-woodsbagot.com:443#更多选择 | 伍兹贝格
-www.transunion.hk:443#更多选择 | 香港环联
-hongkongairport.com:443#更多选择 | 香港机场
-www.visa.cn:443#金融域名 | VISA中国
-visa.com:443#金融域名 | VISA美国
-www.tpg.com:443#金融域名 | TPG
-www.wilshire.com:443#金融域名 | Wilshire
-cloudflare-eth.com:443#官方域名 | Web3
-cloudflare.dev:443#官方域名 | Developers
-cloudflare.net:443#官方域名 | Business
-r2.dev:443#官方域名 | R2
-pages.dev:443#官方域名 | Pages
-cdnjs.com:443#官方域名 | CDNJS
-cloudflare-ech.com:443#官方域名 | ECH
-static.cloudflareinsights.com:443#官方域名 | Analytics
-ln.edu.hk:443#教育域名 | 岭南大学
-www.ntu.edu.sg:443#教育域名 | 南洋理工
-www.ox.ac.uk:443#教育域名 | 牛津大学
-columbia.edu:443#教育域名 | 哥伦比亚
-www.udacity.com:443#教育域名 | Udacity
-www.researchgate.net:443#教育域名 | ResearchGate
-saas.sin.fan:443#大佬维护 | MIYU
-skk.moe:443#大佬维护 | Sukka
-bestcf.030101.xyz:443#大佬维护 | MingYu
 cf.877774.xyz:443#大佬维护 | QMS
-yg1.ygkkk.dpdns.org:443#大佬维护 | YGKKK
-cf.090227.xyz:443#大佬维护 | CMLiu
 cf.tencentapp.cn:443#大佬维护 | KTFF
 cloudflare.182682.xyz:443#大佬维护 | WeTest
 cu.877774.xyz:443#按运营商 | 联通QMS
