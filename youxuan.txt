@@ -2,7 +2,6 @@
 cloudflare-ip.mofashi.ltd#三网专线
 cloudflare.182682.xyz#三网专线
 freeyx.cloudflare88.eu.org#三网专线
-cloudflare-ip.mofashi.ltd#三网专线
 mfa.gov.ua#联通电信专线
 一、极速稳定1
 162.159.117.106#电信专线
