@@ -1,9 +1,4 @@
 （优选域名）
-cloudflare-ip.mofashi.ltd#三网专线
-cloudflare.182682.xyz#三网专线
-freeyx.cloudflare88.eu.org#三网专线
-mfa.gov.ua#三网专线
-
 202.144.194.203:443#🇯🇵 日本_50ms
 149.104.30.51:443#🇭🇰 香港_54ms
 103.118.41.198:443#🇭🇰 香港_70ms
