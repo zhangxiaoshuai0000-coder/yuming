@@ -1,0 +1,1040 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+proxies:
+- name: AU-1
+  type: vless
+  server: 207.57.135.123
+  port: 35621
+  uuid: 6f8acdfd-0ce0-4386-ba02-5040da4c6fea
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: wK6kCgPEjDA7KADag0eZUc8e523kdIOCh8Qavkb15nA
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: AU-2
+  type: vless
+  server: 207.57.135.121
+  port: 45292
+  uuid: bc643a4e-db20-4f63-bdfa-986975a8f0b0
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: PQx0xZmo6MgfGLxQd2iZeL4j5cjDw4Xm_muffL1MlQ0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.ebay.com
+- name: AU-3
+  type: vless
+  server: 207.57.131.115
+  port: 45140
+  uuid: 55e38df8-d960-44c2-9fe2-537765304eae
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: LV22cTxk34mYg42GDbCo1qW1laGh8LX_9mtpZ3P2U3Y
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: dash.cloudflare.com
+- name: AU-4
+  type: vless
+  server: 45.152.64.9
+  port: 11763
+  uuid: fe564b09-1fd8-4053-934b-3106350e4272
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: CN-1
+  type: vless
+  server: www.microsoft.com
+  port: 443
+  uuid: 8f9dc380-fa9e-46e1-93c5-016987cbd17c
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: TsUbtUAeEG2WvSJaS-LOnI9Zx8i-QWI8bfvI212caG4
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: microsoft.com
+- name: DE-1
+  type: vless
+  server: 38.207.178.244
+  port: 51895
+  uuid: 51fb4051-a146-45cd-b902-a24df5325b23
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: Uz7IOZjbOsAGGacB7CVE8jkrIDAphwIIzjurkFx5Ckk
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+- name: DE-2
+  type: vless
+  server: 38.207.178.88
+  port: 5585
+  uuid: 356d377d-2cdf-4a3f-8bc3-44452f9718b7
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: TUZZH3TKQjuwZc20BCT5SHvKbbeSUzAwB75ZDf_Vy3M
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.ebay.com
+- name: FR-1
+  type: vless
+  server: 207.57.135.29
+  port: 54785
+  uuid: 810493f7-4306-40f1-86e5-9fa7868b26b6
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: RqlCAwGrowPZDljm1O3c5jJJQmhwmSPOdgsopGTJMzE
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: GB-1
+  type: vless
+  server: 45.136.15.18
+  port: 28708
+  uuid: df766295-facc-4ae9-a3f1-6c48ad5d721f
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: PjK10ZYHB6YOio0IrKYpNkH2mKEabgSvZhOy-hc9TUo
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+- name: GB-2
+  type: vless
+  server: 68.64.181.175
+  port: 50437
+  uuid: 183013a5-1c01-4e36-ae9e-59a15d1bb0b5
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: PlDDOZUSEmHeKG43OjxAxUwR_LJCI5ojL1OWHkJRlm0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.ebay.com
+- name: GB-3
+  type: vless
+  server: 207.57.135.46
+  port: 17144
+  uuid: e1be6b8f-a0f5-45a9-8aa6-634c26793325
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: vk8mcF1ox2RdeqR31z1eQp1XAhnDN7lY0Xbt3zMAfSc
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+- name: GB-4
+  type: vless
+  server: 45.144.137.129
+  port: 41923
+  uuid: b28936a7-c11a-4147-8806-b66efd1658a8
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: 7YfjX8TsT3HL0ZzvovjEDOLCM142j3bFcorv-Gs-m2Y
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: dash.cloudflare.com
+- name: GB-5
+  type: vless
+  server: 207.57.128.138
+  port: 18493
+  uuid: 0c800379-6d30-4e92-bc92-975870917c6d
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: ecbBpsjPFcbQjjSqtFO0bR7B_NqkKpXgj41-Q5ZMalA
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: HK-1
+  type: vless
+  server: 38.207.176.227
+  port: 24190
+  uuid: 538e6fea-2c29-4da3-bfba-8da67a2fd9d3
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: LS6ENQ8BWIvaAjw0v8A39dpt1fH_kVE9VUa4Mwmhvlw
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: HK-2
+  type: vless
+  server: 38.147.173.43
+  port: 32073
+  uuid: b145ee79-42dd-4399-adcc-044660ad306f
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: G7_z4XOqJImMhL0H8rBzN-VSR739_RsUGokfNuyadQc
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+- name: HK-3
+  type: vless
+  server: 207.57.133.237
+  port: 56109
+  uuid: 751b489c-27e6-4bae-b43c-f02fb304d768
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: WV3fNhuy06svr1ONLWT2t76iDO9lJVonANX5pbBMwic
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: dash.cloudflare.com
+- name: JP-1
+  type: vless
+  server: 207.57.135.125
+  port: 31895
+  uuid: 5e483359-08a3-46d9-904b-8f1f469577ac
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: ezDjdoPtdw4-2mZFCLgdlIHD9RoQ7P1MMMVV-pBPuHc
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+- name: JP-2
+  type: vless
+  server: 207.57.133.54
+  port: 18582
+  uuid: 37b1e31e-0288-49d3-aa93-fe6a848501a3
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: zDedAztDEYmYmjEOnYW8JZIaKG3MFZKov9i9k2BcbDA
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: dash.cloudflare.com
+- name: JP-3
+  type: vless
+  server: 207.57.128.241
+  port: 48256
+  uuid: c9858759-70bc-4d9d-b43b-b9ce233c0353
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: PLMKW3tCxUXZArpQZ6tuaECgNaSNUP-6NNxg7aRqIR8
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: JP-4
+  type: vless
+  server: 68.64.180.197
+  port: 7506
+  uuid: b1f5bbe4-e63c-4c07-a183-8767b2293e59
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: SkF6myFIhvcfSKmogSeBMMldnr54U_4qu-aZEZzEpRk
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: JP-5
+  type: vless
+  server: 193.134.209.62
+  port: 40514
+  uuid: 35360464-29ac-4c06-93aa-f9af6d4964f4
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: Tu3JZDib7rpQqzzRbr-8RnG2JoncA2y4g30GT8PBnx8
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+- name: KR-1
+  type: vless
+  server: 207.57.133.226
+  port: 45643
+  uuid: 87d6ec62-660b-430a-a89c-dcd85d5aff75
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: iJ-HaZJleNLUNRws14Ud2veIdX8xdX0b97yWFQ0B33M
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+- name: KR-2
+  type: vless
+  server: 207.57.133.52
+  port: 13809
+  uuid: 0b95d6b2-f567-4c81-b298-1884c1f6ec27
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: QiI98tjdsbG6y94RoptTgUmG-n6qRikKEE8Gpv-5EUo
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.cloudflare.com
+- name: KR-3
+  type: vless
+  server: 207.57.133.49
+  port: 23156
+  uuid: 46554735-415f-4be5-9390-a19dc430a15c
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: NjDiEVSSYysWC7yheN_cy4YkCXHtP91yB4vbpgQc2Q8
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.cloudflare.com
+- name: KR-4
+  type: vless
+  server: 45.152.65.157
+  port: 30521
+  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+- name: SG-1
+  type: vless
+  server: 45.136.14.251
+  port: 23974
+  uuid: 8aea14f7-5a77-4fa7-9924-f3921abc4cc2
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: hFaO787_gkKJuZYllnq-L0ZMiEqiCY80q2_xbP2CNRA
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.amazon.com
+- name: SG-2
+  type: vless
+  server: 207.57.131.123
+  port: 26631
+  uuid: 906f32ff-9293-46ee-a694-a5eee40b8b42
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: x2oZng_IPNINd3JLak1Rtv05OdkwgChhgHzBT7Z3byQ
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.cloudflare.com
+- name: SG-3
+  type: vless
+  server: 68.64.180.228
+  port: 8797
+  uuid: 7cfc0cb0-f127-4786-9a01-618a7ef064bb
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: hqZowW3p6zDgy0_dr1kgKt5ZReVnEoAfp8XfuPORHx0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+- name: SG-4
+  type: vless
+  server: 207.57.131.118
+  port: 36297
+  uuid: 82267970-9ba7-44f9-a552-e69720df81f1
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: rBHsBLrfPPEkm2qmSxaRtTQsIAxhtBel7P1_8ccEAmg
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+- name: SG-5
+  type: vless
+  server: 207.57.134.109
+  port: 56439
+  uuid: 7a0388fd-2dc9-4af5-8515-d3649ec77d9b
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: aPioc-Rwi9TdjorJ0uqg7JXXeqZhaztKagc1eMuC2Dc
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.ebay.com
+- name: US-1
+  type: vless
+  server: 207.57.134.153
+  port: 38156
+  uuid: 3940f40e-1d33-420c-90ca-1896e4911d2c
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: YiaOdFKAJD0ktWP_UkvHGGq3P4ZRkwC_k2HrHxDH-zM
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+- name: US-2
+  type: vless
+  server: 193.134.211.201
+  port: 64136
+  uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: dash.cloudflare.com
+- name: US-3
+  type: vless
+  server: 45.144.137.55
+  port: 10766
+  uuid: 2b61c167-5563-43ab-94a0-7d02c0a27ca5
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: U9z66G173U5ROhQvuyRf7SmkViqn1juXjvsy88dWtEk
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+- name: US-4
+  type: vless
+  server: 38.147.172.2
+  port: 18830
+  uuid: 4ca5286a-05f1-476f-a5ff-e522a2f41b95
+  network: tcp
+  tls: true
+  reality-opts:
+    public-key: 8kiQCMpifYMlVORGI8KxqQixS7COb-Sa43Kkxs0kxUQ
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  servername: aws.amazon.com
+proxy-groups:
+- name: 节点选择
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+  type: select
+  proxies:
+  - 自动选择
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 香港节点
+  - 手动切换
+  - DIRECT
+- name: 手动切换
+  icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+  include-all: true
+  type: select
+- name: 自动选择
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+  type: url-test
+  include-all: true
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 电报消息
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 狮城节点
+  - 台湾节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 香港节点
+  - 手动切换
+  - DIRECT
+- name: OpenAi
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - AI-UNHK
+  - 狮城节点
+  - 台湾节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 香港节点
+  - 手动切换
+  - DIRECT
+- name: AI-UNHK
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AI.png
+  type: select
+  include-all: true
+  exclude-filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 狮城节点
+  - 台湾节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 手动切换
+  - DIRECT
+- name: 油管视频
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 狮城节点
+  - 香港节点
+  - 台湾节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 手动切换
+  - DIRECT
+- name: 奈飞视频
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 奈飞节点
+  - 狮城节点
+  - 香港节点
+  - 台湾节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 手动切换
+  - DIRECT
+- name: 巴哈姆特
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
+  type: select
+  proxies:
+  - 台湾节点
+  - 节点选择
+  - 手动切换
+  - DIRECT
+- name: 哔哩哔哩
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+  type: select
+  proxies:
+  - 全球直连
+  - 台湾节点
+  - 香港节点
+- name: 国外媒体
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 手动切换
+  - DIRECT
+- name: 国内媒体
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+  type: select
+  proxies:
+  - DIRECT
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 手动切换
+- name: 谷歌FCM
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 美国节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 韩国节点
+  - 香港节点
+  - 手动切换
+- name: 微软Bing
+  icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 美国节点
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 韩国节点
+  - 手动切换
+- name: 微软云盘
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 美国节点
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 韩国节点
+  - 手动切换
+- name: 微软服务
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+  type: select
+  proxies:
+  - 节点选择
+  - DIRECT
+  - 美国节点
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 韩国节点
+  - 手动切换
+- name: 苹果服务
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 美国节点
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 韩国节点
+  - 手动切换
+- name: 游戏平台
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 美国节点
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 韩国节点
+  - 手动切换
+- name: 网易音乐
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
+  type: select
+  include-all: true
+  filter: (?i)网易|音乐|NetEase|Music
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+- name: 全球直连
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+- name: 广告拦截
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 应用净化
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 漏网之鱼
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - DIRECT
+  - 香港节点
+  - 台湾节点
+  - 狮城节点
+  - 日本节点
+  - 美国节点
+  - 韩国节点
+  - 手动切换
+- name: 香港节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+  include-all: true
+  filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 日本节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+  include-all: true
+  filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 美国节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+  include-all: true
+  filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 台湾节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+  include-all: true
+  filter: (?i)台|新北|彰化|TW|Taiwan
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 狮城节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+  include-all: true
+  filter: (?i)新加坡|坡|狮城|SG|Singapore
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 韩国节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+  include-all: true
+  filter: (?i)KR|Korea|KOR|首尔|韩|韓
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 奈飞节点
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+  include-all: true
+  filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+  type: select
+- name: GLOBAL
+  icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+  include-all: true
+  type: select
+  proxies:
+  - 节点选择
+  - 手动切换
+  - 自动选择
+  - 电报消息
+  - OpenAi
+  - AI-UNHK
+  - 油管视频
+  - 奈飞视频
+  - 巴哈姆特
+  - 哔哩哔哩
+  - 国外媒体
+  - 国内媒体
+  - 谷歌FCM
+  - 微软Bing
+  - 微软云盘
+  - 微软服务
+  - 苹果服务
+  - 游戏平台
+  - 网易音乐
+  - 全球直连
+  - 广告拦截
+  - 应用净化
+  - 漏网之鱼
+  - 香港节点
+  - 日本节点
+  - 美国节点
+  - 台湾节点
+  - 狮城节点
+  - 韩国节点
+  - 奈飞节点
+rule-providers:
+  LocalAreaNetwork:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+    path: ./ruleset/UnBan.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanAD:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+    path: ./ruleset/BanAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanProgramAD:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GoogleFCM:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+    path: ./ruleset/GoogleFCM.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GoogleCN:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+    path: ./ruleset/GoogleCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  SteamCN:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  AI-MIX:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
+    path: ./ruleset/AI.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bing:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
+    path: ./ruleset/Bing.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  OneDrive:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
+    path: ./ruleset/OneDrive.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Microsoft:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+    path: ./ruleset/Microsoft.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Apple:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+    path: ./ruleset/Apple.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Telegram:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    path: ./ruleset/Telegram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  OpenAi:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+    path: ./ruleset/OpenAi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  NetEaseMusic:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
+    path: ./ruleset/NetEaseMusic.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Epic:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
+    path: ./ruleset/Epic.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Origin:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
+    path: ./ruleset/Origin.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Sony:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
+    path: ./ruleset/Sony.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Steam:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
+    path: ./ruleset/Steam.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Nintendo:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
+    path: ./ruleset/Nintendo.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  YouTube:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+    path: ./ruleset/YouTube.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Netflix:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
+    path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bahamut:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
+    path: ./ruleset/Bahamut.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BilibiliHMT:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
+    path: ./ruleset/BilibiliHMT.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bilibili:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
+    path: ./ruleset/Bilibili.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaMedia:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyMedia:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyGFWlist:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaDomain:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaCompanyIp:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
+    behavior: ipcidr
+    interval: 86400
+    format: text
+    type: http
+  Download:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+    path: ./ruleset/Download.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+rules:
+- RULE-SET,LocalAreaNetwork,全球直连
+- RULE-SET,UnBan,全球直连
+- RULE-SET,BanAD,广告拦截
+- RULE-SET,BanProgramAD,应用净化
+- RULE-SET,GoogleFCM,谷歌FCM
+- RULE-SET,GoogleCN,全球直连
+- RULE-SET,SteamCN,全球直连
+- RULE-SET,AI-MIX,AI-UNHK
+- RULE-SET,Bing,微软Bing
+- RULE-SET,OneDrive,微软云盘
+- RULE-SET,Microsoft,微软服务
+- RULE-SET,Apple,苹果服务
+- RULE-SET,Telegram,电报消息
+- RULE-SET,OpenAi,OpenAi
+- RULE-SET,NetEaseMusic,网易音乐
+- RULE-SET,Epic,游戏平台
+- RULE-SET,Origin,游戏平台
+- RULE-SET,Sony,游戏平台
+- RULE-SET,Steam,游戏平台
+- RULE-SET,Nintendo,游戏平台
+- RULE-SET,YouTube,油管视频
+- RULE-SET,Netflix,奈飞视频
+- RULE-SET,Bahamut,巴哈姆特
+- RULE-SET,BilibiliHMT,哔哩哔哩
+- RULE-SET,Bilibili,哔哩哔哩
+- RULE-SET,ChinaMedia,国内媒体
+- RULE-SET,ProxyMedia,国外媒体
+- RULE-SET,ProxyGFWlist,节点选择
+- RULE-SET,ChinaDomain,全球直连
+- RULE-SET,ChinaCompanyIp,全球直连
+- RULE-SET,Download,全球直连
+- GEOIP,CN,全球直连
+- MATCH,漏网之鱼
