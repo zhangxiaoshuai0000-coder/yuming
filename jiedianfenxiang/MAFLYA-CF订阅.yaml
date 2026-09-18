@@ -1,0 +1,781 @@
+# profile-title: maflya-cf
+port: 7890
+socks-port: 7891
+mode: rule
+log-level: info
+unified-delay: true
+proxies:
+  - name: "CF1-CDG-1ms"
+    type: vless
+    server: 149.104.28.251
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF2-CDG-1ms"
+    type: vless
+    server: 82.27.116.181
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF3-CDG-1ms"
+    type: vless
+    server: 151.158.0.138
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF4-CDG-1ms"
+    type: vless
+    server: 161.158.0.138
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF5-CDG-2ms"
+    type: vless
+    server: 43.175.131.30
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF6-CDG-2ms"
+    type: vless
+    server: 91.110.174.202
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF7-CDG-2ms"
+    type: vless
+    server: 185.155.235.58
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF8-CDG-2ms"
+    type: vless
+    server: 101.33.55.147
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF9-CDG-2ms"
+    type: vless
+    server: 177.3.89.196
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF10-CDG-2ms"
+    type: vless
+    server: 34.104.218.57
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF11-CDG-2ms"
+    type: vless
+    server: 103.150.8.222
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF12-CDG-2ms"
+    type: vless
+    server: 102.134.49.108
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF13-CDG-2ms"
+    type: vless
+    server: 154.83.95.25
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF14-CDG-2ms"
+    type: vless
+    server: 43.155.202.169
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF15-SG-CDG-2ms"
+    type: vless
+    server: 172.104.59.228
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF16-SG-CDG-2ms"
+    type: vless
+    server: 139.162.60.149
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF17-SG-CDG-2ms"
+    type: vless
+    server: 43.160.241.223
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF18-SG-CDG-2ms"
+    type: vless
+    server: 64.56.71.152
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF19-SG-CDG-2ms"
+    type: vless
+    server: 139.177.185.196
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF20-SG-CDG-2ms"
+    type: vless
+    server: 89.28.239.43
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF21-SG-CDG-2ms"
+    type: vless
+    server: 43.160.220.72
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF22-SG-CDG-2ms"
+    type: vless
+    server: 43.160.203.174
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF23-SG-CDG-2ms"
+    type: vless
+    server: 139.162.41.109
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF24-SG-CDG-2ms"
+    type: vless
+    server: 139.162.40.240
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF25-SG-CDG-2ms"
+    type: vless
+    server: 152.175.67.191
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF26-HK-CDG-2ms"
+    type: vless
+    server: 47.76.171.37
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF27-HK-CDG-2ms"
+    type: vless
+    server: 91.213.186.189
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF28-HK-CDG-2ms"
+    type: vless
+    server: 141.11.238.183
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF29-HK-CDG-2ms"
+    type: vless
+    server: 45.221.113.58
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF30-CDG-3ms"
+    type: vless
+    server: 47.84.54.115
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF31-CDG-3ms"
+    type: vless
+    server: 103.195.188.192
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF32-CDG-3ms"
+    type: vless
+    server: 172.64.144.172
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF33-CDG-3ms"
+    type: vless
+    server: 172.64.229.158
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF34-CDG-3ms"
+    type: vless
+    server: 162.159.198.1
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF35-SG-CDG-3ms"
+    type: vless
+    server: 172.104.60.181
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF36-SG-CDG-3ms"
+    type: vless
+    server: 139.162.17.105
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF37-SG-CDG-3ms"
+    type: vless
+    server: 172.104.186.18
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF38-SG-CDG-3ms"
+    type: vless
+    server: 139.162.61.198
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF39-SG-CDG-3ms"
+    type: vless
+    server: 43.160.238.73
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF40-SG-CDG-3ms"
+    type: vless
+    server: 89.28.239.234
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF41-SG-CDG-3ms"
+    type: vless
+    server: 139.162.33.165
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF42-SG-CDG-3ms"
+    type: vless
+    server: 140.235.9.57
+    port: 8443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF43-CDG-3ms"
+    type: vless
+    server: 162.159.197.1
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF44-HK-CDG-3ms"
+    type: vless
+    server: 43.247.134.129
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+  - name: "CF45-HK-CDG-3ms"
+    type: vless
+    server: 207.57.131.117
+    port: 443
+    uuid: 66bf5a86-914d-46b9-b372-c54714b8d9c1
+    udp: true
+    tls: true
+    servername: j4m2gz1f.maflya.dpdns.org
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: j4m2gz1f.maflya.dpdns.org
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "⚡ 自动优选"
+      - "CF1-CDG-1ms"
+      - "CF2-CDG-1ms"
+      - "CF3-CDG-1ms"
+      - "CF4-CDG-1ms"
+      - "CF5-CDG-2ms"
+      - "CF6-CDG-2ms"
+      - "CF7-CDG-2ms"
+      - "CF8-CDG-2ms"
+      - "CF9-CDG-2ms"
+      - "CF10-CDG-2ms"
+      - "CF11-CDG-2ms"
+      - "CF12-CDG-2ms"
+      - "CF13-CDG-2ms"
+      - "CF14-CDG-2ms"
+      - "CF15-SG-CDG-2ms"
+      - "CF16-SG-CDG-2ms"
+      - "CF17-SG-CDG-2ms"
+      - "CF18-SG-CDG-2ms"
+      - "CF19-SG-CDG-2ms"
+      - "CF20-SG-CDG-2ms"
+      - "CF21-SG-CDG-2ms"
+      - "CF22-SG-CDG-2ms"
+      - "CF23-SG-CDG-2ms"
+      - "CF24-SG-CDG-2ms"
+      - "CF25-SG-CDG-2ms"
+      - "CF26-HK-CDG-2ms"
+      - "CF27-HK-CDG-2ms"
+      - "CF28-HK-CDG-2ms"
+      - "CF29-HK-CDG-2ms"
+      - "CF30-CDG-3ms"
+      - "CF31-CDG-3ms"
+      - "CF32-CDG-3ms"
+      - "CF33-CDG-3ms"
+      - "CF34-CDG-3ms"
+      - "CF35-SG-CDG-3ms"
+      - "CF36-SG-CDG-3ms"
+      - "CF37-SG-CDG-3ms"
+      - "CF38-SG-CDG-3ms"
+      - "CF39-SG-CDG-3ms"
+      - "CF40-SG-CDG-3ms"
+      - "CF41-SG-CDG-3ms"
+      - "CF42-SG-CDG-3ms"
+      - "CF43-CDG-3ms"
+      - "CF44-HK-CDG-3ms"
+      - "CF45-HK-CDG-3ms"
+  - name: "⚡ 自动优选"
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "CF1-CDG-1ms"
+      - "CF2-CDG-1ms"
+      - "CF3-CDG-1ms"
+      - "CF4-CDG-1ms"
+      - "CF5-CDG-2ms"
+      - "CF6-CDG-2ms"
+      - "CF7-CDG-2ms"
+      - "CF8-CDG-2ms"
+      - "CF9-CDG-2ms"
+      - "CF10-CDG-2ms"
+      - "CF11-CDG-2ms"
+      - "CF12-CDG-2ms"
+      - "CF13-CDG-2ms"
+      - "CF14-CDG-2ms"
+      - "CF15-SG-CDG-2ms"
+      - "CF16-SG-CDG-2ms"
+      - "CF17-SG-CDG-2ms"
+      - "CF18-SG-CDG-2ms"
+      - "CF19-SG-CDG-2ms"
+      - "CF20-SG-CDG-2ms"
+      - "CF21-SG-CDG-2ms"
+      - "CF22-SG-CDG-2ms"
+      - "CF23-SG-CDG-2ms"
+      - "CF24-SG-CDG-2ms"
+      - "CF25-SG-CDG-2ms"
+      - "CF26-HK-CDG-2ms"
+      - "CF27-HK-CDG-2ms"
+      - "CF28-HK-CDG-2ms"
+      - "CF29-HK-CDG-2ms"
+      - "CF30-CDG-3ms"
+      - "CF31-CDG-3ms"
+      - "CF32-CDG-3ms"
+      - "CF33-CDG-3ms"
+      - "CF34-CDG-3ms"
+      - "CF35-SG-CDG-3ms"
+      - "CF36-SG-CDG-3ms"
+      - "CF37-SG-CDG-3ms"
+      - "CF38-SG-CDG-3ms"
+      - "CF39-SG-CDG-3ms"
+      - "CF40-SG-CDG-3ms"
+      - "CF41-SG-CDG-3ms"
+      - "CF42-SG-CDG-3ms"
+      - "CF43-CDG-3ms"
+      - "CF44-HK-CDG-3ms"
+      - "CF45-HK-CDG-3ms"
+  - name: "HK香港"
+    type: select
+    proxies:
+      - "CF26-HK-CDG-2ms"
+      - "CF27-HK-CDG-2ms"
+      - "CF28-HK-CDG-2ms"
+      - "CF29-HK-CDG-2ms"
+      - "CF44-HK-CDG-3ms"
+      - "CF45-HK-CDG-3ms"
+  - name: "JP日本"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+  - name: "SG新加坡"
+    type: select
+    proxies:
+      - "CF15-SG-CDG-2ms"
+      - "CF16-SG-CDG-2ms"
+      - "CF17-SG-CDG-2ms"
+      - "CF18-SG-CDG-2ms"
+      - "CF19-SG-CDG-2ms"
+      - "CF20-SG-CDG-2ms"
+      - "CF21-SG-CDG-2ms"
+      - "CF22-SG-CDG-2ms"
+      - "CF23-SG-CDG-2ms"
+      - "CF24-SG-CDG-2ms"
+      - "CF25-SG-CDG-2ms"
+      - "CF35-SG-CDG-3ms"
+      - "CF36-SG-CDG-3ms"
+      - "CF37-SG-CDG-3ms"
+      - "CF38-SG-CDG-3ms"
+      - "CF39-SG-CDG-3ms"
+      - "CF40-SG-CDG-3ms"
+      - "CF41-SG-CDG-3ms"
+      - "CF42-SG-CDG-3ms"
+  - name: "US美国"
+    type: select
+    proxies:
+      - "🚀 节点选择"
+
+rules:
+  - MATCH,🚀 节点选择
