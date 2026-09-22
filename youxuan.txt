@@ -34,7 +34,11 @@
 172.67.231.210:443#🇳🇱荷兰[高速16.10MB]
 188.114.98.202:443#🇳🇱荷兰[高速6.22MB]
 一、极速稳定3
-cf.877774.xyz#三网专线域名
+greim.no#三网专线优选域名
+cfyx.aliyun.20237737.xyz#三网专线优选域名
+youxuan.cf.3666888.xyz#三网专线优选域名
+cfvip.cf.3666888.xyz#三网专线优选域名
+uac.cf.3666888.xyz#三网专线优选域名
 ctcc.cloudflare.seeck.cn#中国电信专线
 cmcc.cloudflare.seeck.cn#中国移动专线
 cucc.cloudflare.seeck.cn#中国联通专线
