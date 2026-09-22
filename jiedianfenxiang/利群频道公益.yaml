@@ -1,0 +1,2153 @@
+allow-lan: true
+base-dns:
+    proxies:
+        - 自动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+    type: select
+base-filter-au:
+    filter: "(?i)(澳大利亚|澳洲|\U0001F1E6\U0001F1FA|悉尼|墨尔本|(?<![A-Za-z])AU(?![A-Za-z])|Australia|AUS)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Australia.png
+base-filter-de:
+    filter: "(?i)(德国|\U0001F1E9\U0001F1EA|法兰克福|(?<![A-Za-z])DE(?![A-Za-z])|Germany|GER)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Germany.png
+base-filter-hk:
+    filter: "(?i)(港|\U0001F1ED\U0001F1F0|(?<![A-Za-z])HK(?![A-Za-z])|Hong|HKG)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Hong_Kong.png
+base-filter-jp:
+    filter: "(?i)(日|\U0001F1EF\U0001F1F5|(?<![A-Za-z])JP(?![A-Za-z])|Japan|JPN)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Japan.png
+base-filter-kr:
+    filter: "(?i)(韩|\U0001F1F0\U0001F1F7|韓|首尔|南朝鲜|(?<![A-Za-z])KR(?![A-Za-z])|KOR|Korea)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Korea.png
+base-filter-my:
+    filter: "(?i)(马来西亚|\U0001F1F2\U0001F1FE|(?<![A-Za-z])MY(?![A-Za-z])|Malaysia|MYS)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Malaysia.png
+base-filter-other:
+    exclude-filter: "(?i)(港|\U0001F1ED\U0001F1F0|(?<![A-Za-z])HK(?![A-Za-z])|Hong|HKG|坡|狮城|\U0001F1F8\U0001F1EC|(?<![A-Za-z])SG(?![A-Za-z])|Singapore|SGP|日|\U0001F1EF\U0001F1F5|(?<![A-Za-z])JP(?![A-Za-z])|Japan|JPN|韩|\U0001F1F0\U0001F1F7|韓|首尔|南朝鲜|(?<![A-Za-z])KR(?![A-Za-z])|KOR|Korea|美|\U0001F1FA\U0001F1F8|(?<![A-Za-z])US(?![A-Za-z])|USA|台|\U0001F1F9\U0001F1FC|(?<![A-Za-z])TW(?![A-Za-z])|tai|TPE|优选|马来西亚|\U0001F1F2\U0001F1FE|(?<![A-Za-z])MY(?![A-Za-z])|Malaysia|MYS|德国|\U0001F1E9\U0001F1EA|法兰克福|(?<![A-Za-z])DE(?![A-Za-z])|Germany|GER|澳大利亚|澳洲|\U0001F1E6\U0001F1FA|悉尼|墨尔本|(?<![A-Za-z])AU(?![A-Za-z])|Australia|AUS)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/World_Map.png
+base-filter-sg:
+    filter: "(?i)(坡|狮城|\U0001F1F8\U0001F1EC|(?<![A-Za-z])SG(?![A-Za-z])|Singapore|SGP)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Singapore.png
+base-filter-tw:
+    filter: "(?i)(台|\U0001F1F9\U0001F1FC|(?<![A-Za-z])TW(?![A-Za-z])|tai|TPE)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/China.png
+base-filter-us:
+    filter: "(?i)(美|\U0001F1FA\U0001F1F8|(?<![A-Za-z])US(?![A-Za-z])|USA)"
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/United_States.png
+base-filter-yxym:
+    filter: (?i)(优选)
+    icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Siri.png
+base-loadbalance:
+    empty-fallback: REJECT
+    hidden: true
+    include-all: true
+    interval: 1800
+    lazy: true
+    max-failed-times: 3
+    strategy: sticky-sessions
+    timeout: 3000
+    type: load-balance
+    url: https://www.gstatic.com/generate_204
+base-provider:
+    header:
+        User-Agent:
+            - clash.meta/v1.19.29
+            - clash-verge/v2.5.2
+            - mihomo
+    health-check:
+        enable: true
+        interval: 3600
+        lazy: true
+        url: https://www.gstatic.com/generate_204
+    interval: 3600
+    proxy: DIRECT
+    type: http
+base-ruleset-dn:
+    behavior: domain
+    format: mrs
+    interval: 86400
+    proxy: DIRECT
+    type: http
+base-ruleset-ip:
+    behavior: ipcidr
+    format: mrs
+    interval: 86400
+    proxy: DIRECT
+    type: http
+base-urltest:
+    empty-fallback: REJECT
+    hidden: true
+    include-all: true
+    interval: 1800
+    lazy: true
+    max-failed-times: 3
+    timeout: 3000
+    tolerance: 200
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+bind-address: '*'
+direct-first:
+    proxies:
+        - DIRECT
+        - 自动选择
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+    type: select
+dns:
+    cache-algorithm: arc
+    default-nameserver:
+        - 223.5.5.5#DIRECT
+        - 119.29.29.29#DIRECT
+    direct-nameserver:
+        - 223.6.6.6#DIRECT
+        - 119.29.29.29#DIRECT
+    enable: true
+    enhanced-mode: fake-ip
+    fake-ip-filter:
+        - rule-set:private
+        - rule-set:fakeip-filter
+        - rule-set:geolocation-cn
+    fake-ip-range: 198.18.0.1/15
+    fake-ip-range6: 2001:2::1/48
+    ipv6: false
+    listen: 0.0.0.0:1053
+    nameserver:
+        - https://dns.google/dns-query#DNS&ecs=223.5.5.0/24
+        - https://doh.opendns.com/dns-query#DNS&ecs=223.5.5.0/24
+        - https://cloudflare-dns.com/dns-query#DNS&ecs=223.5.5.0/24
+    nameserver-policy:
+        rule-set:private,fakeip-filter,geolocation-cn:
+            - 223.5.5.5#DIRECT
+            - 119.29.29.29#DIRECT
+    proxy-server-nameserver:
+        - https://dns.alidns.com/dns-query#DIRECT
+        - https://doh.pub/dns-query#DIRECT
+    respect-rules: false
+    use-hosts: true
+experimental:
+    quic-go-disable-gso: true
+external-controller: 0.0.0.0:9090
+external-ui: ui
+external-ui-name: zashboard
+external-ui-url: https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip
+find-process-mode: strict
+hosts:
+    cloudflare-dns.com:
+        - 1.1.1.1
+        - 1.0.0.1
+    dns.alidns.com:
+        - 223.5.5.5
+        - 223.6.6.6
+    dns.google:
+        - 8.8.8.8
+        - 8.8.4.4
+    doh.opendns.com:
+        - 208.67.222.222
+        - 208.67.220.220
+    doh.pub:
+        - 1.12.12.12
+        - 120.53.53.53
+    services.googleapis.cn: services.googleapis.com
+ipv6: false
+keep-alive-idle: 60
+keep-alive-interval: 60
+log-level: info
+mixed-port: 7890
+mode: rule
+ntp:
+    enable: true
+    interval: 60
+    port: 123
+    server: ntp.aliyun.com
+    write-to-system: false
+port: 7891
+profile:
+    store-fake-ip: true
+    store-selected: true
+proxies:
+    - name: "[A利群]US \U0001F1FA\U0001F1F8"
+      type: vless
+      server: 104.16.65.1
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /streams/favourites/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 2"
+      type: vless
+      server: 104.16.105.166
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /avatar/message/class/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 3"
+      type: vless
+      server: 104.16.238.130
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /lang/doujin/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 4"
+      type: vless
+      server: 104.16.244.151
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /doujin/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 5"
+      type: vless
+      server: 104.16.250.178
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /pages/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 6"
+      type: vless
+      server: 104.16.251.3
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /members/go.html/about/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 7"
+      type: vless
+      server: 104.17.18.11
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 8"
+      type: vless
+      server: 104.17.18.146
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /tools/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 9"
+      type: vless
+      server: 104.17.21.231
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /share/downloads/go.php/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 10"
+      type: vless
+      server: 104.17.61.233
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /channels/collect/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 11"
+      type: vless
+      server: 104.17.69.244
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /go.html/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 12"
+      type: vless
+      server: 104.17.98.97
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /library/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 13"
+      type: vless
+      server: 104.17.102.210
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /archive/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 14"
+      type: vless
+      server: 104.17.134.51
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /out.php/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 15"
+      type: vless
+      server: 104.17.134.75
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /contact/blog/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 16"
+      type: vless
+      server: 104.17.134.122
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /category/uploads/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 17"
+      type: vless
+      server: 104.17.134.207
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /link/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 18"
+      type: vless
+      server: 104.17.139.37
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /edu/film/pic/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 19"
+      type: vless
+      server: 104.17.141.73
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /activity/movie/f/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 20"
+      type: vless
+      server: 104.17.141.228
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /p/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 21"
+      type: vless
+      server: 104.17.142.212
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /lives/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 22"
+      type: vless
+      server: 104.17.162.3
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /zh-cn/star/pdf/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 23"
+      type: vless
+      server: 104.17.166.135
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /post/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 24"
+      type: vless
+      server: 104.17.167.134
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /vod/thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC"
+      type: vless
+      server: 104.18.33.75
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /v/note/anime/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 2"
+      type: vless
+      server: 104.18.33.219
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /api/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 3"
+      type: vless
+      server: 104.18.33.232
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /message/class/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 4"
+      type: vless
+      server: 104.18.46.111
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /films/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 25"
+      type: vless
+      server: 104.18.81.19
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /content/help/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 26"
+      type: vless
+      server: 104.18.89.52
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /auth/uploads/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 27"
+      type: vless
+      server: 104.18.121.15
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /star/playlist/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 28"
+      type: vless
+      server: 104.18.151.172
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /member/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 29"
+      type: vless
+      server: 104.18.166.129
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /map/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 30"
+      type: vless
+      server: 104.18.189.153
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /soft/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 31"
+      type: vless
+      server: 104.18.223.253
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /users/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 32"
+      type: vless
+      server: 104.18.255.167
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /ajax/index/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 33"
+      type: vless
+      server: 104.19.35.193
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /htm/topics/ad/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 34"
+      type: vless
+      server: 104.19.43.102
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /stars/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 35"
+      type: vless
+      server: 104.19.48.41
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /order/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 36"
+      type: vless
+      server: 104.19.52.47
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /collection/vip/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 37"
+      type: vless
+      server: 104.19.148.121
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /wenku/events/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 38"
+      type: vless
+      server: 104.19.154.200
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /items/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 39"
+      type: vless
+      server: 104.19.212.207
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /source/cp/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 40"
+      type: vless
+      server: 104.19.220.22
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /films/detail/channel/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]NL \U0001F1F3\U0001F1F1"
+      type: vless
+      server: 104.26.2.104
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /documents/student/store/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]NL \U0001F1F3\U0001F1F1 2"
+      type: vless
+      server: 104.26.3.162
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /about/pdf/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]NL \U0001F1F3\U0001F1F1 3"
+      type: vless
+      server: 104.26.4.90
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /vip/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]NL \U0001F1F3\U0001F1F1 4"
+      type: vless
+      server: 104.26.5.134
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /playlist/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]NL \U0001F1F3\U0001F1F1 5"
+      type: vless
+      server: 104.26.8.117
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /tech/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 41"
+      type: vless
+      server: 104.31.16.158
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /music/f/seasons/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 5"
+      type: vless
+      server: 162.159.24.131
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /seller/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 6"
+      type: vless
+      server: 162.159.35.20
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /code/share/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 7"
+      type: vless
+      server: 162.159.58.65
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /link/documents/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 8"
+      type: vless
+      server: 162.159.61.183
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /ask/readme/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA"
+      type: vless
+      server: 162.159.128.253
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /movie/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA 2"
+      type: vless
+      server: 162.159.137.204
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /photo/comics/app/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA 3"
+      type: vless
+      server: 162.159.140.85
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /categories/share/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA 4"
+      type: vless
+      server: 162.159.140.116
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /category/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 42"
+      type: vless
+      server: 162.159.237.76
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /films/images/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 43"
+      type: vless
+      server: 162.159.237.201
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /jump.php/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 9"
+      type: vless
+      server: 172.64.48.226
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /archive/drama/home/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]JP \U0001F1EF\U0001F1F5"
+      type: vless
+      server: 172.64.52.27
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /test/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]JP \U0001F1EF\U0001F1F5 2"
+      type: vless
+      server: 172.64.52.127
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /magnet/version/topic/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]JP \U0001F1EF\U0001F1F5 3"
+      type: vless
+      server: 172.64.53.63
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /cn/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 44"
+      type: vless
+      server: 172.64.91.69
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /contact/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 10"
+      type: vless
+      server: 172.64.148.155
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /out.html/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 11"
+      type: vless
+      server: 172.64.150.64
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /about/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 12"
+      type: vless
+      server: 172.64.155.159
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /uploads/groups/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 13"
+      type: vless
+      server: 172.64.156.99
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /manhua/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 14"
+      type: vless
+      server: 172.64.156.156
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /about/travel/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 15"
+      type: vless
+      server: 172.64.159.79
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /discuss/film/forums/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]JP \U0001F1EF\U0001F1F5 4"
+      type: vless
+      server: 172.64.229.7
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /categories/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 45"
+      type: vless
+      server: 172.66.1.36
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /topic/cn/redirect/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA 5"
+      type: vless
+      server: 172.67.67.119
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /shop/events/directory/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA 6"
+      type: vless
+      server: 172.67.69.207
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /thread/article/study/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]DE \U0001F1E9\U0001F1EA 7"
+      type: vless
+      server: 172.67.79.45
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /map/comics/documents/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 46"
+      type: vless
+      server: 173.245.49.194
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /auth/albums/courses/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 16"
+      type: vless
+      server: 188.164.248.39
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /class/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 17"
+      type: vless
+      server: 188.164.248.84
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /out.php/contact/map/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 47"
+      type: vless
+      server: 198.41.208.224
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /ajax/player/company/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | shopify.com'
+      type: vless
+      server: shopify.com
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /episode/map/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | nexusmods.com'
+      type: vless
+      server: nexusmods.com
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /help/trade/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | mfa.gov.ua'
+      type: vless
+      server: mfa.gov.ua
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /go.html/services/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | store.ubi.com'
+      type: vless
+      server: store.ubi.com
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /topics/library/trade/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | cf.877774.xyz'
+      type: vless
+      server: cf.877774.xyz
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /blog/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | cf.090227.xyz'
+      type: vless
+      server: cf.090227.xyz
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /film/p/documents/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | 三网 | cloudflare.seeck.cn'
+      type: vless
+      server: cloudflare.seeck.cn
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /study/club/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | 电信 | ctcc.cloudflare.seeck.cn'
+      type: vless
+      server: ctcc.cloudflare.seeck.cn
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /download/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | 移动 | cmcc.cloudflare.seeck.cn'
+      type: vless
+      server: cmcc.cloudflare.seeck.cn
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /topics/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: '[A利群]优选 | 联通 | cucc.cloudflare.seeck.cn'
+      type: vless
+      server: cucc.cloudflare.seeck.cn
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-x3hbj8y3aar0kilk.lancelot.dpdns.org
+        path: /player/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+proxy-groups:
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Rocket.png
+      name: 打包代理
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Daily.png
+      name: 打包直连
+      proxies:
+        - DIRECT
+        - 自动选择
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Drill.png
+      name: 漏网之鱼
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - empty-fallback: REJECT
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/LinkCube.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 自动选择
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Clubhouse.png
+      include-all: true
+      name: 手动选择
+      type: select
+    - empty-fallback: REJECT
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/friDay.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 负载均衡
+      strategy: sticky-sessions
+      timeout: 3000
+      type: load-balance
+      url: https://www.gstatic.com/generate_204
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/AdBlack.png
+      name: 广告拦截
+      proxies:
+        - REJECT
+        - 自动选择
+        - 手动选择
+        - DIRECT
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Cellular.png
+      name: DNS
+      proxies:
+        - 自动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Cloudflare.png
+      name: Cloudflare
+      proxies:
+        - DIRECT
+        - 自动选择
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Telegram.png
+      name: Telegram
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Google.png
+      name: Google
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Google.png
+      name: GoogleFCM
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/YouTube.png
+      name: Youtube
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/AI.png
+      name: AI
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Additional/Opencode.png
+      name: Opencode
+      proxies:
+        - DIRECT
+        - 自动选择
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/TikTok.png
+      name: Tiktok
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Netflix.png
+      name: Netflix
+      proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+      type: select
+    - filter: (?i)(优选)
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Siri.png
+      include-all: true
+      name: 优选域名
+      proxies:
+        - 优选域名-自动
+      type: select
+    - filter: "(?i)(美|\U0001F1FA\U0001F1F8|(?<![A-Za-z])US(?![A-Za-z])|USA)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/United_States.png
+      include-all: true
+      name: 美国
+      proxies:
+        - 美国-自动
+      type: select
+    - filter: "(?i)(坡|狮城|\U0001F1F8\U0001F1EC|(?<![A-Za-z])SG(?![A-Za-z])|Singapore|SGP)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Singapore.png
+      include-all: true
+      name: 新加坡
+      proxies:
+        - 新加坡-自动
+      type: select
+    - filter: "(?i)(港|\U0001F1ED\U0001F1F0|(?<![A-Za-z])HK(?![A-Za-z])|Hong|HKG)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Hong_Kong.png
+      include-all: true
+      name: 香港
+      proxies:
+        - 香港-自动
+      type: select
+    - filter: "(?i)(日|\U0001F1EF\U0001F1F5|(?<![A-Za-z])JP(?![A-Za-z])|Japan|JPN)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Japan.png
+      include-all: true
+      name: 日本
+      proxies:
+        - 日本-自动
+      type: select
+    - filter: "(?i)(韩|\U0001F1F0\U0001F1F7|韓|首尔|南朝鲜|(?<![A-Za-z])KR(?![A-Za-z])|KOR|Korea)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Korea.png
+      include-all: true
+      name: 韩国
+      proxies:
+        - 韩国-自动
+      type: select
+    - filter: "(?i)(马来西亚|\U0001F1F2\U0001F1FE|(?<![A-Za-z])MY(?![A-Za-z])|Malaysia|MYS)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Malaysia.png
+      include-all: true
+      name: 马来西亚
+      proxies:
+        - 马来西亚-自动
+      type: select
+    - filter: "(?i)(德国|\U0001F1E9\U0001F1EA|法兰克福|(?<![A-Za-z])DE(?![A-Za-z])|Germany|GER)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Germany.png
+      include-all: true
+      name: 德国
+      proxies:
+        - 德国-自动
+      type: select
+    - filter: "(?i)(澳大利亚|澳洲|\U0001F1E6\U0001F1FA|悉尼|墨尔本|(?<![A-Za-z])AU(?![A-Za-z])|Australia|AUS)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Australia.png
+      include-all: true
+      name: 澳大利亚
+      proxies:
+        - 澳大利亚-自动
+      type: select
+    - filter: "(?i)(台|\U0001F1F9\U0001F1FC|(?<![A-Za-z])TW(?![A-Za-z])|tai|TPE)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/China.png
+      include-all: true
+      name: 台湾省
+      proxies:
+        - 台湾省-自动
+      type: select
+    - exclude-filter: "(?i)(港|\U0001F1ED\U0001F1F0|(?<![A-Za-z])HK(?![A-Za-z])|Hong|HKG|坡|狮城|\U0001F1F8\U0001F1EC|(?<![A-Za-z])SG(?![A-Za-z])|Singapore|SGP|日|\U0001F1EF\U0001F1F5|(?<![A-Za-z])JP(?![A-Za-z])|Japan|JPN|韩|\U0001F1F0\U0001F1F7|韓|首尔|南朝鲜|(?<![A-Za-z])KR(?![A-Za-z])|KOR|Korea|美|\U0001F1FA\U0001F1F8|(?<![A-Za-z])US(?![A-Za-z])|USA|台|\U0001F1F9\U0001F1FC|(?<![A-Za-z])TW(?![A-Za-z])|tai|TPE|优选|马来西亚|\U0001F1F2\U0001F1FE|(?<![A-Za-z])MY(?![A-Za-z])|Malaysia|MYS|德国|\U0001F1E9\U0001F1EA|法兰克福|(?<![A-Za-z])DE(?![A-Za-z])|Germany|GER|澳大利亚|澳洲|\U0001F1E6\U0001F1FA|悉尼|墨尔本|(?<![A-Za-z])AU(?![A-Za-z])|Australia|AUS)"
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/World_Map.png
+      include-all: true
+      name: 其他节点
+      proxies:
+        - 其他节点-自动
+      type: select
+    - empty-fallback: REJECT
+      filter: (?i)(优选)
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Siri.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 优选域名-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(美|\U0001F1FA\U0001F1F8|(?<![A-Za-z])US(?![A-Za-z])|USA)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/United_States.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 美国-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(坡|狮城|\U0001F1F8\U0001F1EC|(?<![A-Za-z])SG(?![A-Za-z])|Singapore|SGP)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Singapore.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 新加坡-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(港|\U0001F1ED\U0001F1F0|(?<![A-Za-z])HK(?![A-Za-z])|Hong|HKG)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Hong_Kong.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 香港-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(日|\U0001F1EF\U0001F1F5|(?<![A-Za-z])JP(?![A-Za-z])|Japan|JPN)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Japan.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 日本-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(韩|\U0001F1F0\U0001F1F7|韓|首尔|南朝鲜|(?<![A-Za-z])KR(?![A-Za-z])|KOR|Korea)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Korea.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 韩国-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(马来西亚|\U0001F1F2\U0001F1FE|(?<![A-Za-z])MY(?![A-Za-z])|Malaysia|MYS)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Malaysia.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 马来西亚-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(德国|\U0001F1E9\U0001F1EA|法兰克福|(?<![A-Za-z])DE(?![A-Za-z])|Germany|GER)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Germany.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 德国-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(澳大利亚|澳洲|\U0001F1E6\U0001F1FA|悉尼|墨尔本|(?<![A-Za-z])AU(?![A-Za-z])|Australia|AUS)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Australia.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 澳大利亚-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      filter: "(?i)(台|\U0001F1F9\U0001F1FC|(?<![A-Za-z])TW(?![A-Za-z])|tai|TPE)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/China.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 台湾省-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+    - empty-fallback: REJECT
+      exclude-filter: "(?i)(港|\U0001F1ED\U0001F1F0|(?<![A-Za-z])HK(?![A-Za-z])|Hong|HKG|坡|狮城|\U0001F1F8\U0001F1EC|(?<![A-Za-z])SG(?![A-Za-z])|Singapore|SGP|日|\U0001F1EF\U0001F1F5|(?<![A-Za-z])JP(?![A-Za-z])|Japan|JPN|韩|\U0001F1F0\U0001F1F7|韓|首尔|南朝鲜|(?<![A-Za-z])KR(?![A-Za-z])|KOR|Korea|美|\U0001F1FA\U0001F1F8|(?<![A-Za-z])US(?![A-Za-z])|USA|台|\U0001F1F9\U0001F1FC|(?<![A-Za-z])TW(?![A-Za-z])|tai|TPE|优选|马来西亚|\U0001F1F2\U0001F1FE|(?<![A-Za-z])MY(?![A-Za-z])|Malaysia|MYS|德国|\U0001F1E9\U0001F1EA|法兰克福|(?<![A-Za-z])DE(?![A-Za-z])|Germany|GER|澳大利亚|澳洲|\U0001F1E6\U0001F1FA|悉尼|墨尔本|(?<![A-Za-z])AU(?![A-Za-z])|Australia|AUS)"
+      hidden: true
+      icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/World_Map.png
+      include-all: true
+      interval: 1800
+      lazy: true
+      max-failed-times: 3
+      name: 其他节点-自动
+      timeout: 3000
+      tolerance: 200
+      type: url-test
+      url: https://www.gstatic.com/generate_204
+redir-port: 7893
+reject-first:
+    proxies:
+        - REJECT
+        - 自动选择
+        - 手动选择
+        - DIRECT
+    type: select
+rule-providers:
+    ai:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ai-!cn.mrs
+    apple:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/apple.mrs
+    apple-cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/apple@cn.mrs
+    category-ads-all:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.mrs
+    cloudflare:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cloudflare.mrs
+    cnip:
+        behavior: ipcidr
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.mrs
+    docker:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/docker.mrs
+    fakeip-filter:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/wwqgtxx/clash-rules@release/fakeip-filter.mrs
+    games-cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-games@cn.mrs
+    geolocation-!cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.mrs
+    geolocation-cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-cn.mrs
+    github:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs
+    google:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.mrs
+    googlefcm:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/googlefcm.mrs
+    googleip:
+        behavior: ipcidr
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.mrs
+    microsoft:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.mrs
+    microsoft-cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft@cn.mrs
+    netflix:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/netflix.mrs
+    nvidia-cn:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/nvidia@cn.mrs
+    private:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.mrs
+    privateip:
+        behavior: ipcidr
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/private.mrs
+    spotify:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/spotify.mrs
+    steam:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/steam.mrs
+    telegram:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.mrs
+    telegramip:
+        behavior: ipcidr
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
+    tiktok:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/tiktok.mrs
+    twitter:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/twitter.mrs
+    twitterip:
+        behavior: ipcidr
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/twitter.mrs
+    youtube:
+        behavior: domain
+        format: mrs
+        interval: 86400
+        proxy: DIRECT
+        type: http
+        url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs
+rules:
+    - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,geolocation-cn),(RULE-SET,cnip,no-resolve)))))),REJECT
+    - RULE-SET,category-ads-all,广告拦截
+    - RULE-SET,private,打包直连
+    - RULE-SET,privateip,打包直连,no-resolve
+    - RULE-SET,apple-cn,打包直连
+    - RULE-SET,microsoft-cn,打包直连
+    - RULE-SET,games-cn,打包直连
+    - RULE-SET,nvidia-cn,打包直连
+    - DOMAIN-SUFFIX,19882008.xyz,打包直连
+    - DOMAIN-SUFFIX,dpdns.org,打包直连
+    - DOMAIN-SUFFIX,cnb.cool,打包直连
+    - DOMAIN-SUFFIX,1ms.run,打包直连
+    - DOMAIN-SUFFIX,1panel.live,打包直连
+    - DOMAIN-SUFFIX,justwoker.icu,AI
+    - DOMAIN-SUFFIX,opencode.ai,Opencode
+    - DOMAIN-SUFFIX,models.dev,AI
+    - DOMAIN-SUFFIX,agentrouter.org,AI
+    - DOMAIN-SUFFIX,agnes-ai.com,AI
+    - DOMAIN-SUFFIX,tokenharbor.ai,AI
+    - DOMAIN-SUFFIX,developer.amd.com.cn,打包直连
+    - DOMAIN-SUFFIX,cline.bot,AI
+    - DOMAIN-SUFFIX,chat.b.ai,AI
+    - RULE-SET,cloudflare,Cloudflare
+    - RULE-SET,telegram,Telegram
+    - RULE-SET,netflix,Netflix
+    - RULE-SET,tiktok,Tiktok
+    - RULE-SET,spotify,打包代理
+    - RULE-SET,steam,打包代理
+    - RULE-SET,ai,AI
+    - RULE-SET,apple,打包代理
+    - RULE-SET,youtube,Youtube
+    - RULE-SET,googlefcm,GoogleFCM
+    - RULE-SET,google,Google
+    - RULE-SET,docker,打包代理
+    - RULE-SET,github,打包代理
+    - RULE-SET,twitter,打包代理
+    - RULE-SET,microsoft,打包代理
+    - RULE-SET,telegramip,Telegram,no-resolve
+    - RULE-SET,googleip,Google,no-resolve
+    - RULE-SET,twitterip,打包代理,no-resolve
+    - RULE-SET,geolocation-cn,打包直连
+    - RULE-SET,geolocation-!cn,打包代理
+    - RULE-SET,cnip,打包直连
+    - MATCH,漏网之鱼
+socks-port: 7892
+tcp-concurrent: true
+tproxy-port: 7894
+tun:
+    auto-detect-interface: true
+    auto-redirect: true
+    auto-route: true
+    device: mihomo
+    disable-icmp-forwarding: false
+    dns-hijack:
+        - any:53
+        - tcp://any:53
+    enable: false
+    stack: mixed
+    strict-route: true
+unified-delay: true
+urltest-first:
+    proxies:
+        - 自动选择
+        - DIRECT
+        - 手动选择
+        - 负载均衡
+        - 优选域名
+        - 美国
+        - 新加坡
+        - 香港
+        - 日本
+        - 韩国
+        - 马来西亚
+        - 德国
+        - 澳大利亚
+        - 台湾省
+        - 其他节点
+    type: select
