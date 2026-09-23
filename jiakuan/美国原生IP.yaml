@@ -1,0 +1,111 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+proxies:
+  # —— 🇯🇵 日本 01（vless + xtls-rprx-vision）
+  - name: "🇯🇵 日本 01"
+    type: vless
+    server: wax-gtm-sg.vam3cua2rx.xyz
+    port: 28888
+    uuid: 06417f0a-14f1-419b-8b39-c82c65eb1f8d
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: uej88p.huaweiyouxuan.com
+
+  # —— 美国01（vless + REALITY + vision）
+  - name: "美国01"
+    type: vless
+    server: 137.175.82.40
+    port: 30556
+    uuid: 949d278e-6d98-4014-84e9-59f1c6c93e0e
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.lovelive-anime.jp
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: EcmNQqZxyW4GCEQF-7nH54w3qgBkLzsfqFSgafGjB0E
+      short-id: d082f567
+
+  # —— 美国02（http over tls）
+  - name: "美国02"
+    type: http
+    server: 138.199.35.198
+    port: 9002
+    tls: true
+    skip-cert-verify: true
+    sni: 138.199.35.198
+    udp: false
+
+  # —— 美国04（shadowsocks 2022-blake3-aes-128-gcm）
+  - name: "美国04"
+    type: ss
+    server: 67.215.235.109
+    port: 443
+    cipher: 2022-blake3-aes-128-gcm
+    password: 7VOMWk6RwicM3IKLPijKrA==
+    udp: true
+
+  # —— 美国09（vless + ws + tls）
+  - name: "美国09"
+    type: vless
+    server: 108.61.206.125
+    port: 8443
+    uuid: 592ec0f7-72b0-4f5b-95d9-7b1114d72e4e
+    network: ws
+    tls: true
+    udp: true
+    servername: 108.61.206.125
+    skip-cert-verify: true
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 108.61.206.125
+
+  # —— 法国-anytls：mihomo 不支持 anytls 协议，无法转换
+  #    原始 ulink：ulink://install/?content=W3sKInNlcnZlciI6ICI2Mi4yMTAuNy4yNDkiLAoic2VydmVyX3BvcnQiOiAxMTc4MCwKInRhZyI6ICLms5Xlm70tYW55dGxzIiwKInR5cGUiOiAiYW55dGxzIiwKInBhc3N3b3JkIjogImZhbnZwbi5uZXQiLAoiaWRsZV9zZXNzaW9uX2NoZWNrX2ludGVydmFsIjogIjMwcyIsCiJpZGxlX3Nlc3Npb25fdGltZW91dCI6ICIzMHMiLAoibWluX2lkbGVfc2Vzc2lvbiI6IDUsCiJ0bHMiOiB7CiJlbmFibGVkIjogdHJ1ZSwKInNlcnZlcl9uYW1lIjogImJpbmcuY29tIiwKImluc2VjdXJlIjogdHJ1ZSwKImFscG4iOiBbCiJoMiIsCiJodHRwLzEuMSIKXQp9Cn1d&format=json#法国-anytls
+  #    解析结果：anytls @ 62.210.7.249:11780，password=fanvpn.net，sni=bing.com，alpn=h2;http/1.1，insecure=true
+  #    请用 sing-box 或支持 anytls 的客户端导入原链接使用。
+
+proxy-groups:
+  - name: "节点选择"
+    type: select
+    proxies:
+      - "🇯🇵 日本 01"
+      - "美国01"
+      - "美国02"
+      - "美国04"
+      - "美国09"
+      - DIRECT
+  - name: "自动选择"
+    type: url-test
+    url: http://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "🇯🇵 日本 01"
+      - "美国01"
+      - "美国02"
+      - "美国04"
+      - "美国09"
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,节点选择
