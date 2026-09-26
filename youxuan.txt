@@ -1,11 +1,3 @@
-sjc.proxy.zjcloud.us.ci#🇺🇸美国圣何塞
-sea.proxy.zjcloud.us.ci#🇺🇸美国西雅图
-lax.proxy.zjcloud.us.ci#🇺🇸美国洛杉矶
-sin.proxy.zjcloud.us.ci#🇸🇬新加坡
-nrt.proxy.zjcloud.us.ci# 🇯🇵日本东京都
-tpe.proxy.zjcloud.us.ci#🇹🇼中国台湾省
-hkg.proxy.zjcloud.us.ci#🇭🇰中国香港
-
 101.33.80.58:8443#KR韩国[优选高速]
 103.91.219.6:8443#US美国[优选高速]
 （DanFeng交流群) 2026.9.25
