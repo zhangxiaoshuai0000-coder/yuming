@@ -1,0 +1,120 @@
+mode: rule
+allow-lan: false
+log-level: info
+
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+proxies:
+  - name: "HK-01"
+    type: anytls
+    server: "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn"
+    port: 443
+    password: "9sK2mP8xQ7vL3nZ6"
+    sni: "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn"
+    skip-cert-verify: true
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+
+  - name: "HK-02"
+    type: anytls
+    server: "8uhb.pnuqcnp.cn"
+    port: 443
+    password: "9sK2mP8xQ7vL3nZ6"
+    sni: "images.ctfassets.net"
+    skip-cert-verify: true
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+
+  - name: "FR-01"
+    type: anytls
+    server: "62.210.7.249"
+    port: 11780
+    password: "fanvpn.net"
+    sni: "bing.com"
+    skip-cert-verify: true
+    alpn:
+      - h2
+      - http/1.1
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 5
+
+  - name: "US-01"
+    type: anytls
+    server: "awefd2313fefarg23fr24.pnuqcnp.cn"
+    port: 443
+    password: "9sK2mP8xQ7vL3nZ6"
+    sni: "images.ctfassets.net"
+    skip-cert-verify: true
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+
+  - name: "US-02"
+    type: http
+    server: "138.199.35.198"
+    port: 9002
+    tls: true
+    sni: "138.199.35.198"
+    skip-cert-verify: true
+
+  - name: "US-03"
+    type: vless
+    server: "108.61.206.125"
+    port: 8443
+    uuid: "592ec0f7-72b0-4f5b-95d9-7b1114d72e4e"
+    network: ws
+    tls: true
+    sni: "108.61.206.125"
+    skip-cert-verify: true
+    ws-opts:
+      path: "/vless"
+      headers:
+        Host: "108.61.206.125"
+
+  - name: "NL-01"
+    type: http
+    server: "84.17.47.125"
+    port: 9002
+    tls: true
+    sni: "84.17.47.125"
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - "HK-01"
+      - "HK-02"
+      - "FR-01"
+      - "US-01"
+      - "US-02"
+      - "US-03"
+      - "NL-01"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: "Manual"
+    type: select
+    proxies:
+      - "Auto"
+      - "HK-01"
+      - "HK-02"
+      - "FR-01"
+      - "US-01"
+      - "US-02"
+      - "US-03"
+      - "NL-01"
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,Manual
