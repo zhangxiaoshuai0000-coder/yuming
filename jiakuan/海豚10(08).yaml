@@ -1,0 +1,45 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+
+proxies:
+  - name: '法国'
+    type: anytls
+    server: '62.210.7.249'
+    port: 11780
+    password: 'fanvpn.net'
+    sni: 'bing.com'
+    skip-cert-verify: true
+    alpn: ["h2", "http/1.1"]
+
+  - name: '美国'
+    type: http
+    server: '138.199.35.198'
+    port: 9002
+    tls: true
+    sni: '138.199.35.198'
+    skip-cert-verify: true
+
+  - name: '荷兰 - 阿姆斯特丹'
+    type: http
+    server: '84.17.47.125'
+    port: 9002
+    tls: true
+    sni: '84.17.47.125'
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: '🚀 节点选择'
+    type: select
+    proxies:
+      - '法国'
+      - '美国'
+      - '荷兰 - 阿姆斯特丹'
+      - DIRECT
+
+rules:
+  - MATCH,🚀 节点选择
+
+# 说明：AnyTLS/HTTP/VLESS 节点按原始 ulink 参数转换；部分字段是否受你的 Clash Meta 版本支持取决于客户端版本。
