@@ -140,9 +140,10 @@ dns:
         - https://doh.opendns.com/dns-query#DNS&ecs=223.5.5.0/24
         - https://cloudflare-dns.com/dns-query#DNS&ecs=223.5.5.0/24
     nameserver-policy:
-        rule-set:private,fakeip-filter,cn,googlefcm:
+        rule-set:cn:
             - 223.5.5.5#DIRECT
             - 119.29.29.29#DIRECT
+        rule-set:private: system
     proxy-server-nameserver:
         - https://dns.alidns.com/dns-query#DIRECT
         - https://doh.pub/dns-query#DIRECT
@@ -189,31 +190,668 @@ profile:
     store-fake-ip: true
     store-selected: true
 proxies:
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC"
+      type: vless
+      server: 104.18.46.39
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /mag/shop/lives/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 2"
+      type: vless
+      server: 172.64.150.173
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /seasons/code/setting/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 3"
+      type: vless
+      server: 172.64.149.58
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /list/m/index/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 4"
+      type: vless
+      server: 172.64.152.163
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /friends/collection/resource/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 5"
+      type: vless
+      server: 172.64.151.178
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /section/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 6"
+      type: vless
+      server: 172.64.153.247
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /setting/u/htm/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 7"
+      type: vless
+      server: 104.18.38.60
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /apps/movies/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 8"
+      type: vless
+      server: 104.18.43.140
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /urls/ask/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 9"
+      type: vless
+      server: 172.64.146.90
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /favs/zh-cn/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 10"
+      type: vless
+      server: 172.64.158.211
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /movie/directory/htm/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 11"
+      type: vless
+      server: 172.64.159.186
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /link/about/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 12"
+      type: vless
+      server: 172.64.157.107
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /favs/program/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 13"
+      type: vless
+      server: 172.64.147.64
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /index/company/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 14"
+      type: vless
+      server: 172.64.144.180
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /members/ajax/discount/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 15"
+      type: vless
+      server: 172.64.148.127
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /url/jump.html/act/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 16"
+      type: vless
+      server: 172.64.156.38
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /travel/home/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 17"
+      type: vless
+      server: 172.64.154.138
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /comics/magnet/novels/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 18"
+      type: vless
+      server: 172.64.155.89
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /chat/mall/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]JP \U0001F1EF\U0001F1F5"
+      type: vless
+      server: 172.64.229.36
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /pdf/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 19"
+      type: vless
+      server: 172.64.145.224
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /uploads/search/photos/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 20"
+      type: vless
+      server: 8.39.125.230
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /products/online/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]SG \U0001F1F8\U0001F1EC 21"
+      type: vless
+      server: 8.35.211.11
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /ads/about/book/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8"
+      type: vless
+      server: 172.64.190.205
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /outbound/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 2"
+      type: vless
+      server: 172.65.193.20
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /player/groups/comics/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 3"
+      type: vless
+      server: 104.17.29.104
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /library/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 4"
+      type: vless
+      server: 104.18.90.243
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /intro/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 5"
+      type: vless
+      server: 104.16.92.214
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /file/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 6"
+      type: vless
+      server: 104.16.49.220
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /contact/u/img/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 7"
+      type: vless
+      server: 104.16.44.108
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /ad/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 8"
+      type: vless
+      server: 104.16.186.97
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /vod/online/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 9"
+      type: vless
+      server: 162.159.255.158
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /store/new/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 10"
+      type: vless
+      server: 104.16.204.216
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /playlist/m/note/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 11"
+      type: vless
+      server: 104.18.189.241
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /jumping/readme/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 12"
+      type: vless
+      server: 104.17.176.210
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /data/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 13"
+      type: vless
+      server: 104.16.109.108
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /search/library/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 14"
+      type: vless
+      server: 104.17.76.183
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /blogs/ep/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 15"
+      type: vless
+      server: 104.19.226.234
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /urls/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 16"
+      type: vless
+      server: 104.16.174.40
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /search/user/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 17"
+      type: vless
+      server: 104.17.243.83
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /classify/discount/dload/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 18"
+      type: vless
+      server: 172.64.81.74
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /go.php/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 19"
+      type: vless
+      server: 104.17.108.90
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /retrieve/test/music/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 20"
+      type: vless
+      server: 104.19.34.183
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /m/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 21"
+      type: vless
+      server: 104.16.230.173
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /file/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 22"
+      type: vless
+      server: 104.16.210.149
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /play/topic/seller/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 23"
+      type: vless
+      server: 104.17.247.103
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /register/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 24"
+      type: vless
+      server: 104.17.17.251
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /events/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 25"
+      type: vless
+      server: 104.17.110.54
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /m/pictures/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 26"
+      type: vless
+      server: 104.19.52.254
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /retrieve/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 27"
+      type: vless
+      server: 104.16.129.26
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /resource/messages/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+    - name: "[A利群]US \U0001F1FA\U0001F1F8 28"
+      type: vless
+      server: 104.19.24.188
+      port: 443
+      client-fingerprint: chrome
+      tls: true
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+      network: ws
+      ws-opts:
+        headers:
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /wiki/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | shopify.com'
       type: vless
       server: shopify.com
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /magnet/city/en/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | cookiebot.com'
-      type: vless
-      server: cookiebot.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /document/jump.php/drama/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /go.php/directory/data/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | nexusmods.com'
       type: vless
@@ -221,51 +859,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /htm/tools/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | bluehost.com'
-      type: vless
-      server: bluehost.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /photos/api/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | glassdoor.com'
-      type: vless
-      server: glassdoor.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /intro/albums/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | jimdo.com'
-      type: vless
-      server: jimdo.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /m/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /posts/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | mfa.gov.ua'
       type: vless
@@ -273,38 +872,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /star/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | sage.com'
-      type: vless
-      server: sage.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /html/doc/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | staticdelivery.nexusmods.com'
-      type: vless
-      server: staticdelivery.nexusmods.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /groups/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /categories/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | store.ubi.com'
       type: vless
@@ -312,246 +885,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /torrent/url/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | www.speedtest.net'
-      type: vless
-      server: www.speedtest.net
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /friends/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | investor.apple.com'
-      type: vless
-      server: investor.apple.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /redirect/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | markmonitor.com'
-      type: vless
-      server: markmonitor.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /vod/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | store.epicgames.com'
-      type: vless
-      server: store.epicgames.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /ajax/series/chat/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | mycareer.verizon.com'
-      type: vless
-      server: mycareer.verizon.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /classify/club/dh/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | onetrust.com'
-      type: vless
-      server: onetrust.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /dload/documents/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | www.visa.com'
-      type: vless
-      server: www.visa.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /friend/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | www.tpg.com'
-      type: vless
-      server: www.tpg.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /index/stream/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | www.wilshire.com'
-      type: vless
-      server: www.wilshire.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /section/test/pay/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | cloudflare-eth.com'
-      type: vless
-      server: cloudflare-eth.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /favourites/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | cloudflare.dev'
-      type: vless
-      server: cloudflare.dev
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /site/lessons/apps/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | cloudflare.net'
-      type: vless
-      server: cloudflare.net
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /bbs/chat/file/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | r2.dev'
-      type: vless
-      server: r2.dev
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /links/sale/movies/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | pages.dev'
-      type: vless
-      server: pages.dev
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /thread/favorite/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | cdnjs.com'
-      type: vless
-      server: cdnjs.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /events/topics/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | cloudflare-ech.com'
-      type: vless
-      server: cloudflare-ech.com
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /html/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | skk.moe'
-      type: vless
-      server: skk.moe
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /urls/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | bestcf.030101.xyz'
-      type: vless
-      server: bestcf.030101.xyz
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /jumping/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /community/file/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | cf.877774.xyz'
       type: vless
@@ -559,12 +898,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /company/store/acg/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /seller/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | cf.090227.xyz'
       type: vless
@@ -572,25 +911,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /clip/services/f/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: '[A利群]优选 | thewoodflooringhub.co.uk'
-      type: vless
-      server: thewoodflooringhub.co.uk
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /reg/account/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc3-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /mall/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | 三网 | cloudflare.seeck.cn'
       type: vless
@@ -598,12 +924,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /lessons/picture/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc2-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /edu/program/comics/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | 电信 | ctcc.cloudflare.seeck.cn'
       type: vless
@@ -611,12 +937,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /contact/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc5-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /ad/clip/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | 移动 | cmcc.cloudflare.seeck.cn'
       type: vless
@@ -624,12 +950,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /play/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc6-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /student/new/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
     - name: '[A利群]优选 | 联通 | cucc.cloudflare.seeck.cn'
       type: vless
@@ -637,662 +963,12 @@ proxies:
       port: 443
       client-fingerprint: chrome
       tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
+      servername: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
       network: ws
       ws-opts:
         headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /contact/categories/api/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC"
-      type: vless
-      server: 172.64.149.111
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /photos/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 2"
-      type: vless
-      server: 172.64.159.151
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /messages/page/team/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 3"
-      type: vless
-      server: 104.18.40.147
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /docs/read/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 4"
-      type: vless
-      server: 104.18.41.125
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /res/articles/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 5"
-      type: vless
-      server: 104.18.36.7
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /ads/classify/act/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 6"
-      type: vless
-      server: 172.64.156.10
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /new/go.php/tags/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 7"
-      type: vless
-      server: 104.18.44.34
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /student/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 8"
-      type: vless
-      server: 172.64.147.121
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /pages/feedback/read/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 9"
-      type: vless
-      server: 172.64.145.25
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /film/source/faq/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 10"
-      type: vless
-      server: 172.64.148.59
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /stars/section/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 11"
-      type: vless
-      server: 8.35.211.74
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /episodes/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 12"
-      type: vless
-      server: 104.18.43.252
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /uploads/m/events/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 13"
-      type: vless
-      server: 172.64.154.102
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /company/shows/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 14"
-      type: vless
-      server: 172.64.150.79
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /downloads/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 15"
-      type: vless
-      server: 172.64.151.211
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /dl/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 16"
-      type: vless
-      server: 104.18.38.13
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /pic/ranking/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 17"
-      type: vless
-      server: 172.64.146.87
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /project/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 18"
-      type: vless
-      server: 172.64.157.166
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /home/pdf/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 19"
-      type: vless
-      server: 172.64.153.233
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /map/directory/download/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 20"
-      type: vless
-      server: 104.18.32.88
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /source/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 21"
-      type: vless
-      server: 8.39.125.98
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /seller/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 22"
-      type: vless
-      server: 104.18.34.139
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /page/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 23"
-      type: vless
-      server: 104.18.33.253
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /act/clip/config/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 24"
-      type: vless
-      server: 172.64.155.191
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /about/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 25"
-      type: vless
-      server: 172.64.152.38
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /docs/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 26"
-      type: vless
-      server: 172.64.144.90
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /view/document/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 27"
-      type: vless
-      server: 172.64.158.175
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /games/china/travel/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]JP \U0001F1EF\U0001F1F5"
-      type: vless
-      server: 172.64.229.71
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /torrent/channel/discuss/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]SG \U0001F1F8\U0001F1EC 28"
-      type: vless
-      server: 104.18.42.139
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /streaming/comic/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8"
-      type: vless
-      server: 172.64.92.47
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /comic/buy/activity/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 2"
-      type: vless
-      server: 104.16.210.92
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /albums/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 3"
-      type: vless
-      server: 104.17.96.13
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /dh/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 4"
-      type: vless
-      server: 104.21.238.46
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /city/article/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 5"
-      type: vless
-      server: 104.16.214.20
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /sort/streaming/gif/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 6"
-      type: vless
-      server: 172.65.228.162
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /vip/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 7"
-      type: vless
-      server: 104.16.166.78
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /products/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 8"
-      type: vless
-      server: 104.16.245.99
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /seller/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 9"
-      type: vless
-      server: 141.101.120.113
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /contact/read/source/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 10"
-      type: vless
-      server: 162.159.251.154
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /dh/qa/torrent/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 11"
-      type: vless
-      server: 104.16.183.33
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /outbound/book/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 12"
-      type: vless
-      server: 104.17.146.223
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /chat/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 13"
-      type: vless
-      server: 104.19.114.145
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /shop/buy/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 14"
-      type: vless
-      server: 104.16.239.165
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /go/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 15"
-      type: vless
-      server: 172.64.231.61
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /channel/tool/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 16"
-      type: vless
-      server: 104.17.161.42
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /items/play/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 17"
-      type: vless
-      server: 104.18.29.126
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc5-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /pics/ad/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 18"
-      type: vless
-      server: 162.159.253.39
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc3-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /pdf/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 19"
-      type: vless
-      server: 172.64.88.55
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc6-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /blog/documents/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 20"
-      type: vless
-      server: 104.18.172.180
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc4-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /comics/my/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-      uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-    - name: "[A利群]US \U0001F1FA\U0001F1F8 21"
-      type: vless
-      server: 104.16.94.229
-      port: 443
-      client-fingerprint: chrome
-      tls: true
-      servername: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-      network: ws
-      ws-opts:
-        headers:
-            Host: gy-cffc2-ch-node-x3hbj8y3ccr0kilk.lancelot.dpdns.org
-        path: /temp/movie/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+            Host: gy-cffc4-ch-node-y3hbj8y3ccr0kilk.lancelot.dpdns.org
+        path: /config/content/games/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
       uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
 proxy-groups:
     - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Rocket.png
@@ -1334,7 +1010,7 @@ proxy-groups:
         - 其他节点
       type: select
     - icon: https://testingcf.jsdelivr.net/gh/LancelotRar/policy-icon-set@main/IconSet/Color/Drill.png
-      name: 漏网之鱼
+      name: 规则之外
       proxies:
         - DIRECT
         - 自动选择
@@ -2031,7 +1707,6 @@ rule-providers:
         url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs
 rules:
     - AND,((RULE-SET,geolocation-!cn),(DST-PORT,443),(NETWORK,UDP)),REJECT
-    - RULE-SET,ip-detect,打包代理
     - DOMAIN-SUFFIX,19882008.xyz,打包直连
     - DOMAIN-SUFFIX,dpdns.org,打包直连
     - DOMAIN-SUFFIX,cnb.cool,打包直连
@@ -2046,6 +1721,7 @@ rules:
     - DOMAIN-SUFFIX,developer.amd.com.cn,打包直连
     - DOMAIN-SUFFIX,cline.bot,AI
     - DOMAIN-SUFFIX,chat.b.ai,AI
+    - DOMAIN-SUFFIX,codeberg.org,打包直连
     - RULE-SET,private,打包直连
     - RULE-SET,privateip,打包直连,no-resolve
     - RULE-SET,tailscale,打包直连
@@ -2056,6 +1732,7 @@ rules:
     - RULE-SET,nvidia-cn,打包直连
     - RULE-SET,cloudflare,Cloudflare
     - RULE-SET,telegram,Telegram
+    - RULE-SET,telegramip,Telegram,no-resolve
     - RULE-SET,netflix,Netflix
     - RULE-SET,tiktok,Tiktok
     - RULE-SET,spotify,打包代理
@@ -2065,17 +1742,17 @@ rules:
     - RULE-SET,youtube,Youtube
     - RULE-SET,googlefcm,GoogleFCM
     - RULE-SET,google,Google
+    - RULE-SET,googleip,Google,no-resolve
     - RULE-SET,docker,打包代理
     - RULE-SET,github,打包代理
     - RULE-SET,twitter,打包代理
-    - RULE-SET,microsoft,打包代理
-    - RULE-SET,telegramip,Telegram,no-resolve
-    - RULE-SET,googleip,Google,no-resolve
     - RULE-SET,twitterip,打包代理,no-resolve
+    - RULE-SET,microsoft,打包代理
     - RULE-SET,gfw,打包代理
     - RULE-SET,geolocation-cn,打包直连
     - RULE-SET,cnip,打包直连
-    - MATCH,漏网之鱼
+    - RULE-SET,ip-detect,打包代理
+    - MATCH,规则之外
 socks-port: 7892
 tcp-concurrent: true
 tproxy-port: 7894
@@ -2091,6 +1768,7 @@ tun:
     enable: false
     route-exclude-address-set:
         - cnip
+        - privateip
     stack: mixed
     strict-route: true
 unified-delay: true
