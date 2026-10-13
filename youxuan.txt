@@ -69,6 +69,37 @@
 165.22.117.33:2053# 🇬🇧英国(高速)
 167.99.214.36:443# 🇳🇱荷兰(高速)
 38.59.230.210:14338# 🇳🇱荷兰[高速40MB]
+🚀（DanFeng交流群) 优选域名🚀
+cf.danfeng.eu.org:8443#优选域名(danfeng)
+cf1.danfeng.eu.org:8443#优选域名01(danfeng)
+cf2.danfeng.eu.org:8443#优选域名02(danfeng)
+cf3.danfeng.eu.org:8443#优选域名03(danfeng)
+cf4.danfeng.eu.org:8443#优选域名04(danfeng)
+cf5.danfeng.eu.org:8443#优选域名05(danfeng)
+cf6.danfeng.eu.org:8443#优选域名06(danfeng)
+cf7.danfeng.eu.org:8443#优选域名07(danfeng)
+cf8.danfeng.eu.org:8443#优选域名08(danfeng)
+cf9.danfeng.eu.org:8443#优选域名09(danfeng)
+🚀极速稳定1🚀
+
+🚀极速稳定3🚀
+cf.877774.xyz#优选域名01(专人维护)
+cloudflare.182682.xyz#优选域名02(专人维护)
+saas.sin.fan#优选域名03(专人维护)
+cf.777791.xyz#优选域名04(专人维护)
+cloudflare.seeck.cn#优选域名(三网通用)
+ctcc.cloudflare.seeck.cn#优选域名(中国电信)
+cmcc.cloudflare.seeck.cn#优选域名(中国移动)
+cucc.cloudflare.seeck.cn#优选域名(中国联通)
+🚀极速稳定4🚀
+172.64.229.106#三网专线[高速]
+104.18.40.100#三网专线[高速]
+104.18.37.247#三网专线[高速]
+三、极速稳定5
+172.64.229.138#三网专线[高速]
+172.64.229.215#三网专线[高速]
+172.64.229.129#三网专线[高速]
+172.64.229.141#三网专线[高速]
 🚀🚀（官方测速优选)🚀🚀
 177.201.229.13:443#HK-20.08MB/s
 175.29.23.138:443#HK-19.61MB/s
@@ -112,34 +143,3 @@
 177.3.91.127:8443#JP-11.26MB/s
 43.159.4.34:443#SA-11.03MB/s
 168.93.198.50:4443#MY-13.92MB/s
-🚀（DanFeng交流群) 优选域名🚀
-cf.danfeng.eu.org:8443#优选域名(danfeng)
-cf1.danfeng.eu.org:8443#优选域名01(danfeng)
-cf2.danfeng.eu.org:8443#优选域名02(danfeng)
-cf3.danfeng.eu.org:8443#优选域名03(danfeng)
-cf4.danfeng.eu.org:8443#优选域名04(danfeng)
-cf5.danfeng.eu.org:8443#优选域名05(danfeng)
-cf6.danfeng.eu.org:8443#优选域名06(danfeng)
-cf7.danfeng.eu.org:8443#优选域名07(danfeng)
-cf8.danfeng.eu.org:8443#优选域名08(danfeng)
-cf9.danfeng.eu.org:8443#优选域名09(danfeng)
-🚀极速稳定1🚀
-
-🚀极速稳定3🚀
-cf.877774.xyz#优选域名01(专人维护)
-cloudflare.182682.xyz#优选域名02(专人维护)
-saas.sin.fan#优选域名03(专人维护)
-cf.777791.xyz#优选域名04(专人维护)
-cloudflare.seeck.cn#优选域名(三网通用)
-ctcc.cloudflare.seeck.cn#优选域名(中国电信)
-cmcc.cloudflare.seeck.cn#优选域名(中国移动)
-cucc.cloudflare.seeck.cn#优选域名(中国联通)
-🚀极速稳定4🚀
-172.64.229.106#三网专线[高速]
-104.18.40.100#三网专线[高速]
-104.18.37.247#三网专线[高速]
-三、极速稳定5
-172.64.229.138#三网专线[高速]
-172.64.229.215#三网专线[高速]
-172.64.229.129#三网专线[高速]
-172.64.229.141#三网专线[高速]
