@@ -33,7 +33,7 @@ dns:
     - +.facebook.com
     - +.youtube.com
 proxies:
-- name: '#us美国01'
+- name: us美国01(高速)
   type: hysteria2
   server: 155.94.171.19
   port: 443
@@ -62,20 +62,6 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime42.workers.dev
-- name: us美国04
-  type: vless
-  server: 162.35.168.138
-  port: 25246
-  uuid: ab80faff-2b71-4e11-8d24-4729e75ce782
-  network: tcp
-  tls: true
-  reality-opts:
-    public-key: c6scIXXE0RS01auLcBHI85CT6xdBfvRSMmBu7r_ucR8
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  xudp: true
-  servername: www.mongodb.com
 proxy-groups:
 - name: 节点选择
   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
