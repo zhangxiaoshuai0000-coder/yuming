@@ -301,7 +301,7 @@ aandd.co.jp:2053#B13优选域名(中国联通)
 aandd.co.jp:443#B14优选域名(中国联通)
 www.blibli.com:8443#B15优选域名(中国联通)
 vayyar.com:2096#B16优选域名(中国联通)
-hentaiverse.org:287#B17优选域名(中国联通)1111
+hentaiverse.org:2087#B17优选域名(中国联通)
 nodejs.org:443#B18优选域名(中国联通)
 www.revechat.com:443#B19优选域名(中国联通)
 cnllm.com:8880#B20优选域名(中国联通)
